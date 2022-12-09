@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #000000;
+}
+
+.document-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem 5rem 0rem 5rem;
+}
+
+h1 {
+  font-family: "Pt Serif", sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 47.7px;
+}
+
+h2 {
+  font-family: "Poppins", serif;
+  text-transform: uppercase;
+  line-height: 27px;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.header {
+  padding: 0rem 5rem 0rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 15rem 1fr;
+  width: 60%;
+  margin: 0 auto;
+
+  &-left {
+    display: flex;
+  }
+  &-right {
+    grid-column: 3/-1;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+      font-weight: 300;
+      font-size: 1.8rem;
+      font-family: "Poppins", serif;
+    }
+  }
+}
+
+.aboutus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 60%;
+  margin: 0 auto;
+  padding: 8rem 0rem 10rem 0rem;
+
+  &-slide p {
+    font-family: "Poppins", serif;
+    font-size: 1.8rem;
+    line-height: 27px;
+    font-weight: 500;
+    margin-top: 1.5rem !important;
+  }
+
+  &-slide {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    &-top {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-top p {
+      text-transform: uppercase;
+      margin: 0 !important;
+      writing-mode: vertical-lr;
+      font-size: 1.2rem;
+      font-family: "Pt Serif", serif;
+      font-weight: 400;
+    }
+    & img {
+      width: 23.8rem;
+    }
+  }
+}
+.aboutus :nth-child(2),
+.aboutus :nth-child(5) {
+  margin-top: 12rem;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 17.07px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #a9a9a9;
+  margin-bottom: 2rem;
+
+  & a {
+    text-decoration: none;
+    color: #939393;
+  }
+}
+@media (max-width: 375px) {
+  .document-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 5rem 2rem 0rem 2rem;
+  }
+  h2 {
+    padding-top: 3rem;
+  }
+  .header {
+    width: 100%;
+    padding: 0rem 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &-right p {
+      font-size: 1.4rem;
+    }
+  }
+  .aboutus {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 5rem 0 5rem 0;
+    &-slide p {
+      font-size: 1.4rem;
+      line-height: 21px;
+      margin-top: 1rem !important;
+    }
+    &-slide {
+      margin: 1rem;
+
+      &-top p {
+        font-size: 1rem;
+      }
+      & img {
+        width: 13.8rem;
+      }
+    }
+  }
+  .aboutus :nth-child(2),
+  .aboutus :nth-child(5) {
+    margin-top: 1rem;
+  }
+  .aboutus :nth-child(2),
+  .aboutus :nth-child(4),
+  .aboutus :nth-child(6) {
+    margin-top: 5rem;
+  }
+  .footer p {
+    padding-top: 3rem;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
