@@ -1,0 +1,17 @@
+{
+  "name": "edie-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.1"
+  },
+  "dependencies": {
+    "core-js": "^3.26.1"
+  }
+}
