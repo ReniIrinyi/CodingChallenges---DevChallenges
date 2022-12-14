@@ -1,3 +1,30 @@
-header {
-  font-size: 15rem;
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  & .logo {
+    display: flex;
+    font-size: 3.6rem;
+    font-family: "Haebo", sans-serif;
+    font-weight: 800;
+    line-height: 52.88px;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.nav {
+  display: grid;
+  width: 100%;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: inherit;
 }
